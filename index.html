@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Idamin Rahaman — Data Storyteller</title>
+  <title>Idamin Rahaman — Data Analyst</title>
   <link rel="stylesheet" href="assets/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <div class="brand">
         <h1>Idamin Rahaman</h1>
-        <p class="tag">Data Storyteller</p>
+        <p class="tag">Data Analyst</p>
       </div>
-      <nav class="nav">
+      <nav class="nav" aria-label="Main navigation">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -26,97 +27,105 @@
   </header>
 
   <main class="container main">
-    <section id="hero" class="card hero">
-      <div class="hero-left">
-        <h2>Hi — I’m Idamin</h2>
-        <p class="lead">MIS Executive & Data Analyst who turns numbers into clear, actionable stories using Python, SQL, Power BI and Excel.</p>
+    <!-- HERO -->
+    <section id="hero" class="hero">
+      <div class="hero-left card">
+        <h2>DATA<br>ANALYST</h2>
+        <p class="lead">Data Analyst skilled in data cleaning, visualization, and statistical analysis using Python, SQL, and Power BI. I turn raw datasets into clear, actionable stories and dashboards.</p>
         <p class="meta">Kolkata, India · <a href="mailto:idaminrahaman8@gmail.com">idaminrahaman8@gmail.com</a></p>
         <div class="cta">
           <a class="btn" href="assets/Idamin_Rahaman_Resume.pdf" download>Download Resume</a>
-          <a class="btn ghost" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
         </div>
         <div class="links">
-          <a href="https://github.com/idaminrahaman" target="_blank">GitHub</a> ·
-          <a href="https://www.linkedin.com/in/idamin-rahaman-b754322aa" target="_blank">LinkedIn</a>
+          <a href="https://github.com/idaminrahaman" target="_blank" rel="noopener">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/idamin-rahaman-b754322aa" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
+
       <div class="hero-right">
-        <div class="card mini">
-          <h4>Key Skills</h4>
-          <ul>
-            <li>Python (Pandas, NumPy)</li>
-            <li>SQL · MySQL</li>
-            <li>Power BI · DAX</li>
-            <li>Excel (Pivot, Dashboards)</li>
-          </ul>
+        <div class="portrait-wrap">
+          <img src="assets/img/portrait.png" alt="Idamin Rahaman portrait" class="portrait">
         </div>
       </div>
     </section>
 
+    <!-- ABOUT -->
     <section id="about" class="card">
-      <h2>About</h2>
-      <p>Analytically driven MIS Executive with hands-on experience preparing daily/weekly/monthly MIS reports, building dashboards, and extracting business insights from data. Passionate about retail analytics, air quality analysis, and used-car market studies.</p>
+      <h2>Profile Summary</h2>
+      <p>Data Analyst skilled in data cleaning, visualization, and statistical analysis using SQL, Python, and Power BI. Experienced in building dashboards and extracting actionable insights from real-world datasets. Strong understanding of analytical workflows and end-to-end data handling from extraction to visualization.</p>
     </section>
 
+    <!-- SKILLS -->
     <section id="skills" class="card">
       <h2>Technical Skills</h2>
       <div class="skills-grid">
-        <div><strong>Languages</strong><p>Python, SQL</p></div>
-        <div><strong>Tools</strong><p>Power BI, Excel, MySQL, GitHub</p></div>
-        <div><strong>Libraries</strong><p>Pandas, NumPy, Matplotlib</p></div>
-        <div><strong>Other</strong><p>Data cleaning, dashboarding, reporting</p></div>
+        <div><strong>Programming</strong><p>Python (Pandas, NumPy, SciPy), SQL, DAX</p></div>
+        <div><strong>Visualization</strong><p>Power BI, Matplotlib, Seaborn</p></div>
+        <div><strong>Database</strong><p>MySQL</p></div>
+        <div><strong>Statistics</strong><p>Basic statistical modeling, prediction & trend forecasting</p></div>
+        <div><strong>Tools</strong><p>Excel, Jupyter Notebook, GitHub</p></div>
       </div>
     </section>
 
+    <!-- PROJECTS -->
     <section id="projects" class="card">
       <h2>Projects</h2>
-      <div class="project">
-        <h3>Retail Sales & Inventory Dashboard</h3>
-        <p>Excel and Power BI MIS dashboard to track sales, stock levels and performance by store and region. Automated summaries using Pivot Tables and data visualizations.</p>
-        <p class="small"><strong>Tech:</strong> Excel · Power BI · SQL</p>
-      </div>
 
       <div class="project">
         <h3>India’s Air Pollution Trend Analysis (2014–2023)</h3>
-        <p>Processed CPCB data using SQL and Python to build Power BI visualizations showing AQI trends and regional comparisons across a decade.</p>
-        <p class="small"><strong>Tech:</strong> Python (Pandas) · SQL · Power BI</p>
+        <ul>
+          <li>Analyzed a decade of CPCB air quality data to uncover regional pollution trends across India.</li>
+          <li>Extracted tables from PDF reports using Excel Power Query; cleaned and normalized datasets in MySQL.</li>
+          <li>Processed data with Python (Pandas, SQLAlchemy) to calculate AQI and built an interactive Power BI dashboard visualizing trends and regional comparisons.</li>
+        </ul>
+        <p class="small"><strong>Tech:</strong> Python (Pandas), SQL, Power BI, Excel</p>
       </div>
 
       <div class="project">
         <h3>Used Car Market Analysis (India, 2002–2023)</h3>
-        <p>Analyzed 17K+ car listings to identify resale trends by brand, ownership, and location using SQL and Python visualizations.</p>
-        <p class="small"><strong>Tech:</strong> Python · SQL · Matplotlib</p>
+        <ul>
+          <li>Conducted EDA on 17K+ car listings across 33 brands using SQL and Python.</li>
+          <li>Identified resale value trends by brand, ownership type, and location; recommended city-specific strategies.</li>
+          <li>Visualized insights using Seaborn and Matplotlib for stakeholders.</li>
+        </ul>
+        <p class="small"><strong>Tech:</strong> Python, SQL, Seaborn, Matplotlib</p>
       </div>
     </section>
 
+    <!-- EXPERIENCE -->
     <section id="experience" class="card">
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
       <div class="exp-item">
         <h3>Customer Support Associate — Teleperformance Global</h3>
         <p class="muted">Mar 2024 – Jul 2025</p>
         <ul>
-          <li>Created and maintained Excel-based performance reports for team metrics.</li>
-          <li>Improved accuracy through data-driven reporting and cross-team coordination.</li>
+          <li>Managed 50+ daily international client interactions with focus on accurate issue resolution.</li>
+          <li>Created and maintained Excel-based performance and efficiency reports for team metrics.</li>
+          <li>Improved analytical thinking, reporting accuracy, and data-driven communication.</li>
+          <li>Developed a strong understanding of CRM tools and customer data management.</li>
         </ul>
       </div>
     </section>
 
+    <!-- EDUCATION -->
     <section id="education" class="card">
       <h2>Education</h2>
       <p><strong>Bachelor’s in English Literature</strong> — West Bengal State University (2020–2023). CGPA: 8.6</p>
     </section>
 
+    <!-- CONTACT -->
     <section id="contact" class="card">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:idaminrahaman8@gmail.com">idaminrahaman8@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/idamin-rahaman-b754322aa" target="_blank">www.linkedin.com/in/idamin-rahaman-b754322aa</a></p>
-      <p>GitHub: <a href="https://github.com/idaminrahaman" target="_blank">github.com/idaminrahaman</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/idamin-rahaman-b754322aa" target="_blank" rel="noopener">linkedin.com/in/idamin-rahaman-b754322aa</a></p>
+      <p>GitHub: <a href="https://github.com/idaminrahaman" target="_blank" rel="noopener">github.com/idaminrahaman</a></p>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© 2025 Idamin Rahaman · Data Storyteller</small>
+      <small>© 2025 Idamin Rahaman · Data Analyst</small>
     </div>
   </footer>
 
